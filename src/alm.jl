@@ -172,7 +172,7 @@ function ScatterAlm!(
     d_alm.info.maxnm = get_nm_RR(alm.mmax, 0, c_size) #due to RR the maxnm is the one on the task 0
     d_alm.info.mval = mval
     d_alm.info.mstart = make_mstart_complex(alm.lmax, stride, mval)
-    println("DAlm: I am task $c_rank of $c_size, I work on $(length(mval)) m's of $(alm.mmax)")
+    #println("DAlm: I am task $c_rank of $c_size, I work on $(length(mval)) m's of $(alm.mmax)")
 end
 
 #polarization components only
