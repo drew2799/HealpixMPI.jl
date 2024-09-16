@@ -182,7 +182,7 @@ function ScatterMap!(
         nphi[i] = ringinfo.numOfPixels
         rst += ringinfo.numOfPixels
     end
-    println("DMap: I am task $c_rank of $c_size, I work on $(length(rings)) rings of $(Healpix.numOfRings(res))")
+    #println("DMap: I am task $c_rank of $c_size, I work on $(length(rings)) rings of $(Healpix.numOfRings(res))")
     maxnr = get_nrings_RR(res, 0, c_size)+1
     d_map.info.nside = res.nside
     d_map.info.maxnr = maxnr
